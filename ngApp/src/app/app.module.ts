@@ -10,13 +10,17 @@ import { AuthService } from './auth.service';
 import { FormsModule } from '@angular/forms';
 import { AuthGuard } from './auth.guard'
 import { TokenInterceptorService } from './token-interceptor.service';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { AnalysisComponent } from './analysis/analysis.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
     LoginComponent,
-    SpecialComponent
+    SpecialComponent,
+    DashboardComponent,
+    AnalysisComponent
   ],
   imports: [
     BrowserModule,
