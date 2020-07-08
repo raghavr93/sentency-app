@@ -1,0 +1,12 @@
+<nav>
+  <div>
+    <ul>
+        <a *ngIf="!_authService.loggedIn()" routerLink="/login" routerLinkActive="active">Login</a>
+        <a *ngIf="!_authService.loggedIn()" routerLink="/register" routerLinkActive="active">Register</a> 
+        <a *ngIf="_authService.loggedIn()" (click)="_authService.logoutUser()">Logout</a> 
+    </ul>
+  </div>
+</nav>    
+<div>
+  <router-outlet></router-outlet>            
+</div>

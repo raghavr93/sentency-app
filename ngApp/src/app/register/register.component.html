@@ -1,0 +1,16 @@
+<div>
+      <h3>Register</h3>
+    <div>
+      <form >
+        <div>
+          <label>Username</label>
+          <input type="text" [(ngModel)]="registerUserData.email" name="email" required>
+        </div>
+        <div>
+          <label>Password</label>
+          <input type="password" [(ngModel)]="registerUserData.password" name="password" required>
+        </div>
+        <button type="button" (click)="registerUser()">Register</button>
+      </form>
+    </div>
+</div>
